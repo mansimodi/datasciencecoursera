@@ -10,7 +10,9 @@ setwd("/Users/mansimodi/Desktop/ds_coursera_cert/datasciencecoursera/course3_get
 
 x_test <- read.table("X_test.txt")
 head(x_test)
+dim(x_test)
 y_test <- read.table("Y_test.txt")
+dim(y_test)
 subject_test <- read.table("subject_test.txt")
 
 # Change the directory to train folder to read the train data
@@ -18,7 +20,9 @@ setwd("../") # brings you up one level, similar to cd..
 setwd("./train") # sets the working directory to train
 x_train <- read.table("X_train.txt")
 head(x_train)
+dim(x_train)
 y_train <- read.table("Y_train.txt")
+dim(y_train)
 subject_train <- read.table("subject_train.txt")
 
 setwd("../") 
